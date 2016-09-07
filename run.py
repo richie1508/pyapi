@@ -9,7 +9,7 @@ def hello_world():
     return 'Hello World!\n'
 
 @app.route('/led')
-def led():
+def ledd():
     led.led(5)
     return 'led!\n'
 
