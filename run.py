@@ -1,5 +1,5 @@
 from flask import Flask
-import led
+import alarm
 
 app = Flask(__name__)
 
@@ -8,10 +8,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!\n'
 
-@app.route('/led')
-def ledd():
-    led.led(5)
-    return 'led!\n'
+@app.route('/alarm')
+def alarm0():
+    alarm.alarm()
+    return 'alarm!\n'
 
 if __name__ == '__main__':
     app.run()
